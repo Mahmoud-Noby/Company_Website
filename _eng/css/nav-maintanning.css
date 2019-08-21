@@ -1,0 +1,94 @@
+.head-bg .navbar{
+    z-index: 100;
+    padding:  0 38px !important;
+    margin-top: 48px;
+}
+@media (max-width: 576px),(max-width: 767.98px),(max-width: 991.98px){
+    .head-bg .navbar{
+        background-color: #1f1f1f !important;
+        margin-top: 0;
+        height: 80px;
+    }
+    .head-bg .header-font-awesome{
+        display: none;
+    }
+}
+
+.navbar-light .navbar-brand .fa-asymmetrik:before {
+    content: "\f372";
+    color: #f4c82b;
+}
+.navbar-light .navbar-brand {
+    color: #f4c82b;
+    font-size: 29px;
+    font-weight: 500;
+}
+.navbar-light  .navbar-brand .img-1{
+    max-height: 50px;
+     margin-top: -45px; 
+     margin-right: 20px;
+}
+.navbar-light  .navbar-brand .img-2{
+    max-width: 120px;
+    position: absolute; 
+    left: 10px; 
+    margin-top: -75px;
+}
+
+.navbar-light .navbar-brand span{
+    color: #fff;
+}
+.navbar-light .navbar-brand:hover{
+    color: #f4c82b;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #f4c82b
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #f1f1f1;
+    padding: 0 10px;
+    font-size: 15px;    
+    text-transform: uppercase; 
+}
+.navbar-light .navbar-nav .nav-link img{
+   height: 20px;
+   width:20px; 
+   border-radius: 50%; 
+   margin-left: 5px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f4c82b;
+}
+
+/***** ----------------------------------------------------------------------------------------------
+                media Quary    
+-----------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 576px) ,(max-width: 767.98px) {
+    .navbar-light .navbar-brand{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .navbar-light .navbar-brand .img-1{
+        max-height: 40px; 
+        margin-top: -40px; 
+    }
+    .navbar-light .navbar-brand .img-2{
+        max-width: 100px;
+        margin-top: -70px; 
+        position: absolute; 
+        right: 30px;
+    }
+    .head-bg .inner-text h1{
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+@media (max-width: 991.98px){
+    .head-bg .inner-text h1{
+        font-size: 27px;
+        font-weight: 300;
+        text-align: center;
+    }
+}

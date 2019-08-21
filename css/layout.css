@@ -1,0 +1,177 @@
+.portfilio-section {
+  padding: 100px 0;
+  background-color: #f0f5f7;
+}
+.portfilio-section h1{
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+.portfilio-section h1 span:first-child{
+	color: #ffa620;
+}
+.portfilio-section h1 span:last-child{
+	color: #686868;
+}
+#filters {
+  margin: 1%;
+  padding: 0;
+  list-style: none;
+}
+
+#filters li {
+  float: left;
+}
+
+#filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+#filters li span.active {
+  background: #ffa620;
+  color: #fff;
+}
+
+#portfoliolist .portfolio {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 23%;
+  margin: 1%;
+  display: none;
+  float: left;
+  overflow: hidden;
+}
+
+.portfolio img {
+  max-width: 100%;
+  position: relative;
+  top: 0;
+  display: block;
+}
+
+.portfolio {
+  position: relative;
+}
+
+.portfolio-wrapper {
+  position: relative;
+}
+
+.portfolio-wrapper .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 143, 190);
+  overflow: hidden;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.portfolio-wrapper:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.portfolio-wrapper .text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.portfolio-wrapper .text button{
+  background-color: transparent;
+  background-color: transparent;
+  border: 0 ;
+  font-size: 13px;
+}
+
+.portfolio-wrapper .carousel-control-next-icon, .carousel-control-prev-icon{
+ background-color:   #ffa620 !important;
+}
+.portfolio-wrapper .carousel-control-next-icon, .carousel-control-prev-icon
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+
+  #portfoliolist .portfolio {
+    width: 48%;
+    margin: 1%;
+  }
+
+  #ads {
+    display: none;
+  }
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 70%;
+  }
+
+  #ads {
+    display: none;
+  }
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
